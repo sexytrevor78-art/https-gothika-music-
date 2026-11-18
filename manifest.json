@@ -1,0 +1,40 @@
+
+{
+  "id": "com.gothika.youtube",
+  "version": "1.0.0",
+  "name": "Gothika",
+  "description": "Your personal YouTube music library: music videos and audio tracks.",
+  "resources": [
+    {
+      "name": "catalog",
+      "types": ["movie", "other"]
+    },
+    {
+      "name": "meta",
+      "types": ["movie", "other"],
+      "idPrefixes": ["ytvideo:", "ytaudio:"]
+    },
+    {
+      "name": "stream",
+      "types": ["movie", "other"],
+      "idPrefixes": ["ytvideo:", "ytaudio:"]
+    }
+  ],
+  "types": ["movie", "other"],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "youtube_music_videos",
+      "name": "YouTube Music Videos"
+    },
+    {
+      "type": "other",
+      "id": "youtube_audio_tracks",
+      "name": "YouTube Audio Tracks"
+    }
+  ],
+  "behaviorHints": {
+    "adult": false,
+    "p2p": false
+  }
+}
